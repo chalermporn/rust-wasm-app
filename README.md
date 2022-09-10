@@ -21,6 +21,12 @@ configuration Cargo.toml
 crate-type = ["cdylib", "rlib"]
 ```
 
+compile wasm32
+
+```sh
+rustup target add wasm32-unknown-unknown
+```
+
 build
 
 ```sh
@@ -34,3 +40,13 @@ To support the embedding of WebAssembly into different environments, its specifi
 ```sh
 wasm-gc target/wasm32-unknown-unknown/release/rust_wasm_app.wasm 
 ```
+
+run html serve
+
+```sh
+npx serve -p 3000 ./
+```
+
+## demo
+
+![demo](./screenshots/Screenshot_2022-09-10.png)
