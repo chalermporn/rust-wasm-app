@@ -1,4 +1,4 @@
-# RUST wasm app
+# RUST WASM APP
 
 create app
 
